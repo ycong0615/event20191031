@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #eef1f4;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    color: #3f404f;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 36px;
+}
+h3 {
+    font-size: 20px;
+    margin: 0 0;
+}
+h4 {
+    font-weight: normal;
+}
+#header-wrap {
+    background-color: #fff;
+}
+.header-wrap{
+    background-color: #fff;
+}
+@media screen and (max-width: 767px) {
+    main {
+        width: 100%;
+    }
+    h2 {
+    font-size: 36px;
+    }
+
+}
+
+/* ーーーーーMainVisualーーーーー */
+.yjdc-MainVisual {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+.yjdc-MainVisual__inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+}
+.yjdc-MainVisual__bgImage {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(https://s.yimg.jp/images/ds/dataforest/prom/event/img/bg.png);
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.yjdc-MainVisual-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.yjdc-MainVisual-titleImg-sp{
+    display: none;
+}
+.yjdc-MainVisual-titleImg-pc {
+    max-width: 55vw;
+}
+.scroll-btn1, .scroll-btn2 {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin-left: -14px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    animation: sdb 1.6s infinite;
+    box-sizing: border-box;
+    transition: 1s ease-out;
+    opacity: .8;
+}
+.scroll-btn2 {
+    bottom: 36px;
+    animation: sdb2 1.6s infinite;
+}
+@keyframes sdb {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    50% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    100% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+@keyframes sdb2 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    50% {
+        transform: rotate(-45deg) translate(-12px, 12px);
+    }
+    100% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .yjdc-MainVisual-titleImg-pc{
+    display: none;
+    }
+    .yjdc-MainVisual-titleImg-sp{
+    display: block;
+    }
+    .yjdc-MainVisual-title {
+        top: 45%;
+    }
+    .yjdc-MainVisual {
+    height: 65vh;
+    }
+    .main_visual_bg {
+        height: 65vh;
+    }
+    .yjdc-MainVisual__bgImage {
+    height: 65vh;
+    }
+    .yjdc-MainVisual-titleImg-sp {
+        max-width: 65vw;
+    }
+    .scroll-btn {
+        display: none;
+    }
+}
+
+/* ーーーーーコンセプトーーーーー */
+.yjdc-Concept {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+.yjdc-Concept-area {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0 70px;
+}
+.yjdc-Concept-text {
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 767px) {
+    .yjdc-Concept-area {
+        width: 100%;
+        padding: 20px 5% 70px;
+    }
+}
+
+/* ーーーーーイベント概要ーーーーー */
+.yjdc-Overview-area {
+    width: 1000px;
+    margin: -150px auto 0;
+    padding: 90px 0;
+}
+.yjdc-Overview-list-item {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+.yjdc-Overview-list-title {
+    flex-shrink: 0;
+    background-color: #48cab6;
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 32px;
+    line-height: 48px;
+    letter-spacing: 0.5em;
+    padding: 0.5 0;
+}
+.yjdc-Overview-list-item:nth-child(3) .yjdc-Overview-list-title {
+    padding: 18px 0;
+}
+.yjdc-Overview-list-item:nth-child(4) .yjdc-Overview-list-title {
+    padding: 50px 0;
+}
+.yjdc-Overview-list-content {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.yjdc-Overview-list-content-note {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .yjdc-Overview-area {
+        width: 100%;
+        padding: 90px 5%;
+    }
+    .yjdc-Overview-list-item {
+        display: block;
+    }
+    .yjdc-Overview-list-title {
+        display: block;
+        width: auto;
+        height: 48px;
+        margin: 0 auto;
+    }
+    .yjdc-Overview-list-content {
+        margin: 12px 2% 0;
+    }
+    .yjdc-Overview-list-title {
+        padding: 0 !important;
+    }
+}
+
+/* ーーーーースケジュールーーーーー */
+.yjdc-Schedule {
+    background-color: #ffffff;
+}
+.yjdc-Schedule-area {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0 80px;
+}
+.yjdc-Schedule-note {
+    margin-left: 4px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    color: #676788;
+}
+.yjdc-Schedule-list-item {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+.yjdc-Schedule-list-item::after {
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    left: 24px;
+    width: 2px;
+    height: 100%;
+    z-index: 0;
+    background-color: #48cab6;
+}
+.yjdc-Schedule-list-item:last-child::after{
+    display: none;
+}
+.yjdc-Schedule-list-content-title {
+    margin-top: 2px;
+}
+.yjdc-Schedule-list-time {
+    font-weight: bold;
+    color: #48cab6;
+    height: 36px;
+    font-size: 18px;
+    background-color: #fff;
+    line-height: 32px;
+    margin-right: 16px;
+    z-index: 1;
+}
+.yjdc-Schedule-list-content-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.yjdc-Schedule-list-content-text {
+    margin-top: 14px;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .yjdc-Schedule-area {
+        width: 100%;
+        padding: 20px 5%;
+    }
+}
+
+/* ーーーーーお申し込みーーーーー */
+.yjdc-Apply-area {
+    width: 1000px;
+    margin: 0 auto;
+}
+.yjdc-Apply-button {
+    display: block;
+    /* background-color: #48cab6; */
+    background: linear-gradient(90deg, #5C5C75, #5BD2C1);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin: 60px auto 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear;
+}
+.yjdc-Apply-button:hover {
+    display: block;
+    background: linear-gradient(to right top, #5C5C75, #5BD2C1);
+    transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 767px) {
+    .yjdc-Apply-area {
+        width: 100%;
+        padding: 0 5%;
+    }
+}
